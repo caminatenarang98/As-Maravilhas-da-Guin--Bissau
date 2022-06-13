@@ -1,0 +1,161 @@
+
+*{
+    box-sizing: border-box;
+}
+h1 {
+    text-align: center;
+}
+
+/* PARA MOBILE */
+@media screen and (min-width: 320px) and (max-width: 480px) {
+/* Deixando o conjunto das fotorafias em formato de grid */
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+/* Definindo tamanho máximo das imagens nas suas respectivas células */
+.container .grid-item {
+width: 100%;
+position: relative;
+}
+.grid-item img {
+max-width: 100%;
+}
+/* Deixando as secções em posição relativa para que o figcaption consiga se movimentar para cima */
+.grid-item {
+position: relative;
+}
+
+
+/* Formatando o figcaption das imagens */
+.grid-item figcaption {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  color: white;
+  background-color: black;
+  font-size: 30px;
+  opacity: 50%;
+  font-size: 15px;
+}
+
+ /* Transição das fotos */
+ .grid-item:hover {
+    cursor: pointer;
+    background-color: black;
+    opacity: 50%;
+    transition: 0.20s;
+}
+.grid-item img:hover{
+   cursor: pointer;
+   transform: translateY(20px);
+   transition: 0.5s;
+   color: rgb(0,0,0);
+   opacity: 0.5; 
+}
+
+}
+
+/*--------------------------------------------------------------------------------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------------------------------------------------------------------------*/
+
+/* PARA DESKTOP */
+@media screen and (min-width: 769px) {
+/* Deixando o conjunto das fotorafias em formato de grid */
+   .container {
+       display: flex;
+       flex-direction: row;
+       flex-wrap: wrap;
+   }
+/* Definindo tamanho máximo das imagens nas suas respectivas células */
+.container .grid-item {
+  width: 48%;
+  position: relative;
+}
+ .grid-item img {
+     max-width: 100%;
+ }
+/* Deixando as secções em posição relativa para que o figcaption consiga se movimentar para cima */
+ .grid-item {
+     position: relative;
+     margin: 10px;
+ }
+
+ /* Formatando o figcaption das imagens */
+ .grid-item figcaption {
+     position: absolute;
+     top: 5px;
+     left: 5px;
+     color: white;
+     background-color: black;
+     font-size: 30px;
+     opacity: 50%;
+     width: auto;
+ }
+ /* Transição das fotos */
+ .grid-item:hover {
+     cursor: pointer;
+     background-color: black;
+     opacity: 50%;
+     transition: 0.20s;
+ }
+ .grid-item img:hover{
+    cursor: pointer;
+    transform: translateY(20px);
+    transition: 0.5s;
+    color: rgb(0,0,0);
+    opacity: 0.5; 
+}
+}
+
+/*--------------------------------------------------------------------------------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------------------------------------------------------------------------/*
+/* Para Ipads/Tablets */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+/* Deixando o conjunto das fotorafias em formato de grid */
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+/* Definindo tamanho máximo das imagens nas suas respectivas células */
+.container .grid-item {
+width: 100%;
+position: relative;
+}
+.grid-item img {
+max-width: 100%;
+}
+/* Deixando as secções em posição relativa para que o figcaption consiga se movimentar para cima */
+.grid-item {
+position: relative;
+}
+
+
+/* Formatando o figcaption das imagens */
+.grid-item figcaption {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  color: white;
+  background-color: black;
+  font-size: 30px;
+  opacity: 50%;
+  width:max-content;
+}
+ /* Transição das fotos */
+ .grid-item:hover {
+    cursor: pointer;
+    background-color: black;
+    opacity: 50%;
+    transition: 0.20s;
+}
+.grid-item img:hover{
+   cursor: pointer;
+   transform: translateY(20px);
+   transition: 0.5s;
+   color: rgb(0,0,0);
+   opacity: 0.5; 
+}
+}

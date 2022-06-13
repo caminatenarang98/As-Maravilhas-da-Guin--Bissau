@@ -1,0 +1,129 @@
+
+* {
+    box-sizing: border-box;
+}
+/* Geral */
+@media screen {
+ 
+}
+/* PARA MOBILE */
+@media screen and (min-width: 320px) and (max-width: 480px) {
+    main section article p {
+        text-align: justify;
+        margin: 3px;
+    }
+    main section article {
+        margin:auto;
+        line-height: 25px;
+    }
+    main section article h1, h2 {
+        border-top: 2px solid gray;
+    }
+    main section article h2:nth-child(1) {
+        text-align: center;
+    }
+        /* Imagens de section article */
+        main section article img {
+            float:left;
+            width: 250px;
+            padding-right: 4px;
+        }
+   /* Formatando o mapa da Guiné-Bissau */
+   #mapaGB {
+       width: 100%;
+   }
+   #mapaGB iframe {
+       max-width: 100%;
+       height: 50%;
+   }
+    .div-esquerda-cima {
+       display: none;
+    }
+ 
+}
+
+/* Desktop */
+/* ====================================================================================================================== */
+@media screen and (min-width:769px){
+    main section article p {
+        text-align: justify;
+        margin: 3px;
+    }
+    main section article {
+        width: 50%;
+        margin:auto;
+        line-height: 25px;
+    }
+    main section article h1, h2 {
+        border-top: 2px solid gray;
+    }
+    main section article h2:nth-child(1) {
+        text-align: center;
+    }
+    /* Imagens de section article */
+    main section article img {
+        float:left;
+        width: 400px;
+    }
+   /* Formatando o mapa da Guiné-Bissau */
+   #mapaGB {
+       width: 24%;
+       position: absolute;
+       right: 1%;
+       top: 250px;
+   }
+   #mapaGB iframe {
+       max-width: 100%;
+   }
+    .div-esquerda-cima {
+        width: 24%;
+        position: absolute;
+        height: 100%;
+        left: 0.5%;
+        top:45%;
+        z-index: -1;
+    }
+    .div-esquerda-cima img {
+        max-width: 100%;
+    }
+}
+
+
+/* Îpads / Tablets */
+/* =================================================================================================================== */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+
+
+
+   /* Main */
+   main section article p {
+       text-align: justify;
+       margin: 3px;
+   }
+   main section article {
+       width: 50%;
+       margin:auto;
+       line-height: 25px;
+   }
+   main section article h1, h2 {
+       border-top: 2px solid gray;
+   }
+   main section article h2:nth-child(1) {
+       text-align: center;
+   }
+   /* main section article aside {
+       border: 3px solid red;
+       float: right;
+       height: 300px;
+       width: 20%;
+   } */
+   .div-esquerda-cima {
+       width: 24%;
+       position: absolute;
+       height: 100%;
+       background-color: green;
+       left: 0.5%;
+       top:45%;
+   }
+  
+}

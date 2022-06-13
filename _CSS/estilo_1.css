@@ -1,0 +1,405 @@
+/* Geral */
+@media screen {
+    * {
+        font-family: Arial, Helvetica, sans-serif;
+        box-sizing: border-box;
+    }
+
+    body {
+        margin: 0px 0px;
+        height: 100%;
+    }
+
+    #pinicial {
+        position: fixed;
+        right: 0%;
+        bottom: 10%;
+        border: 3px solid rgb(23, 159, 232);
+        border-radius: 8px;
+        background-color: blue;
+        z-index: 1;
+    }
+
+    #pinicial a {
+        text-decoration: none;
+        color: white;
+        text-transform: uppercase;
+    }
+}
+
+/* PARA MOBILE */
+@media screen and (min-width: 320px) and (max-width: 620px) {
+
+    /* Cabeçalho logo*/
+    header {
+        background: url(../_imagens/vila.jpg);
+        background-size: contain;
+        height: 70px;
+        width: 100%;
+
+    }
+
+    #logo {
+        background: url(../_imagens/bandeira_gb.png) no-repeat;
+        background-size: 99%;
+    }
+
+    #logo {
+        color: transparent;
+        height: 69px;
+        width: 134px;
+        display: inline-block;
+        position: absolute;
+        right: 4%;
+        padding: 1px;
+        margin: 1px;
+        top: 0%;
+
+    }
+
+    /* Área de navegação */
+    header nav {
+        display: none;
+        position: absolute;
+        width: 40%;
+        left: -350px;
+        transition: all 0.5s;
+
+
+    }
+
+    header nav ul {
+        margin-left: 0;
+        padding-left: 0;
+        position: absolute;
+        background-color: rgba(47, 51, 43, 0.9);
+
+
+    }
+
+    header nav ul li {
+        display: block;
+        list-style-type: none;
+        padding: 8px 4px;
+        border: 3px solid transparent;
+        border-radius: 5px;
+
+    }
+
+    header nav ul li a {
+        text-decoration: none;
+        color: white;
+
+    }
+
+    header nav ul li:hover {
+        border-color: rgb(120, 241, 138);
+        background-color: rgb(64, 64, 241);
+    }
+
+    #menu:checked+nav {
+        display: block;
+        transform: translateX(350px);
+        z-index: 100;
+    }
+
+    /* Formatação do menu */
+    header label img {
+        width: 50px;
+        background-color: aliceblue;
+        margin-left: 2%;
+        z-index: 1;
+        cursor: pointer;
+
+    }
+
+    input[type="checkbox"] {
+        display: none;
+    }
+
+    /* Main */
+    main section article p {
+        text-align: justify;
+        margin: 3px;
+    }
+
+
+    /* Rodapé */
+
+    footer {
+        position: relative;
+        margin: auto;
+        background-color: black;
+        color: white;
+        width: 100%;
+        z-index: -1;
+    }
+
+    footer p {
+        text-align: center;
+        margin-top: 5px;
+    }
+
+    footer a {
+        text-decoration: none;
+        color: white;
+        text-align: center;
+        display: block;
+    }
+
+}
+
+/* --------------------------------------------------------------------------------------------------------------------------------------------- */
+/* --------------------------------------------------------------------------------------------------------------------------------------------- */
+
+/* PARA DESKTOP */
+@media screen and (min-width: 769px) {
+
+    /* Cabeçalho logo*/
+    header {
+        width: 100%;
+        /* position: sticky;
+        z-index: var(--z-index-top);
+        position: -webkit-sticky;
+        top: 0;  */
+    }
+
+    #logo {
+        background: url(../_imagens/bandeira_gb.png) no-repeat;
+        background-size: 30%;
+        background-position-x: center;
+        background-position-y: center;
+    }
+
+    #fundo_logo {
+        background: url(../_imagens/vila.jpg);
+        background-size: contain;
+    }
+
+    #menu,
+    label {
+        display: none;
+    }
+
+    #logo {
+        color: transparent;
+        height: 120px;
+        margin: 0;
+        padding-bottom: 0;
+        text-align: center;
+    }
+
+    /* Área de navegação */
+    #menu {
+        display: none;
+    }
+
+    header nav {
+        display: inline-block;
+        background-color: rgb(26, 73, 213, 0.9);
+        margin-left: 0%;
+        margin-right: 0%;
+
+    }
+
+    /* header nav::-webkit-scrollbar{
+        scroll-margin-top:0%;
+    } */
+
+    header nav ul {
+        margin: 0;
+        padding-left: 0;
+
+    }
+
+    header nav ul li {
+        display: inline-block;
+        list-style-type: none;
+        border: 3px solid transparent;
+        border-radius: 8px;
+        padding: 5px;
+        margin: 3px;
+    }
+
+    header nav ul li a {
+        text-decoration: none;
+        text-transform: uppercase;
+        color: white;
+    }
+
+    header nav ul li:hover {
+        background-color: rgb(124, 226, 177);
+        border-color: aqua;
+        transition: 0.5s;
+    }
+
+
+    /* Rodapé */
+    footer {
+        position: relative;
+        background-color: black;
+        color: white;
+        width: 100%;
+    }
+
+    footer p {
+        text-align: center;
+        margin-top: 5px;
+    }
+
+    footer a {
+        text-decoration: none;
+        color: white;
+        text-align: center;
+        display: block;
+    }
+
+}
+
+/* --------------------------------------------------------------------------------------------------------------------------------------------- */
+/* --------------------------------------------------------------------------------------------------------------------------------------------- */
+/* Para Ipads/Tablets */
+@media screen and (min-width: 621) and (max-width: 768px) {
+
+    /* Cabeçalho logo*/
+    header {
+        width: 100%;
+        /* position: sticky;
+        z-index: var(--z-index-top);
+        position: -webkit-sticky;
+        top: 0;  */
+    }
+
+    #logo {
+        background: url(../_imagens/bandeira_gb.png) no-repeat;
+        background-size: 30%;
+        background-position-x: center;
+        background-position-y: center;
+    }
+
+    #fundo_logo {
+        background: url(../_imagens/vila.jpg);
+        background-size: contain;
+    }
+
+    #menu,
+    label {
+        display: none;
+    }
+
+    #logo {
+        color: transparent;
+        height: 120px;
+        margin: 0;
+        padding-bottom: 0;
+        text-align: center;
+    }
+
+    /* Área de navegação */
+    #menu {
+        display: none;
+    }
+
+    header nav {
+        display: inline-block;
+        background-color: rgb(26, 73, 213, 0.9);
+        margin-left: 0%;
+        margin-right: 0%;
+
+    }
+
+    /* header nav::-webkit-scrollbar{
+        scroll-margin-top:0%;
+    } */
+
+    header nav ul {
+        margin: 0;
+        padding-left: 0;
+
+    }
+
+    header nav ul li {
+        display: inline-block;
+        list-style-type: none;
+        border: 3px solid transparent;
+        border-radius: 8px;
+        padding: 5px;
+        margin: 3px;
+    }
+
+    header nav ul li a {
+        text-decoration: none;
+        text-transform: uppercase;
+        color: white;
+    }
+
+    header nav ul li:hover {
+        background-color: rgb(124, 226, 177);
+        border-color: aqua;
+        transition: 0.5s;
+    }
+
+
+    /* Rodapé */
+    footer {
+        flex-shrink: 0;
+        margin: auto;
+        background-color: black;
+        color: white;
+        width: 100%;
+    }
+
+    footer p {
+        text-align: center;
+
+    }
+
+    footer a {
+        text-decoration: none;
+        color: white;
+        text-align: center;
+        display: block;
+    }
+
+}
+
+
+
+
+/* MODELO */
+/* html {
+
+
+}
+
+
+Geral
+@media screen {
+
+}
+
+PARA MOBILE
+@media screen and (min-width: 320px) and (max-width: 480px) {
+
+    
+
+}
+
+--------------------------------------------------------------------------------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------------------------------------------------------------------------
+
+PARA DESKTOP
+@media screen and (min-width: 769px) {
+
+   
+
+}
+
+--------------------------------------------------------------------------------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------------------------------------------------------------------------
+Para Ipads/Tablets
+@media screen and (min-width: 481px) and (max-width: 768px) {
+
+    
+
+} */
