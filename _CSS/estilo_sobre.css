@@ -1,4 +1,4 @@
-html {}
+
 
 
 /* Geral */
@@ -7,17 +7,19 @@ html {}
         background: url(../_imagens/Edificios_Coloniais_em_Bolama_Guine-Bissau.jpg);
         background-size: contain;
     }
-    main section article p a{
+
+    main section article p a {
         /* text-decoration: none; */
-        color:black;
+        color: black;
     }
+
     main section article p a:visited {
-        color:rgb(11, 89, 235);
+        color: rgb(11, 89, 235);
     }
 }
 
 /* PARA MOBILE */
-@media screen and (min-width: 320px) and (max-width: 480px) {
+@media screen and (min-width: 320px) {
 
     /* main */
     main section article {
@@ -35,6 +37,29 @@ html {}
         float: left;
         margin-right: 3px;
     }
+
+}
+
+/* --------------------------------------------------------------------------------------------------------------------------------------------- */
+/* --------------------------------------------------------------------------------------------------------------------------------------------- */
+/* Para Ipads/Tablets */
+@media screen and (min-width: 601px) {
+
+    /* main */
+    main section article {
+        width: 60%;
+    }
+
+    p {
+        text-align: justify;
+    }
+
+    main section img {
+        width: 30%;
+        float: left;
+        margin-right: 3px;
+    }
+
 
 }
 
@@ -61,28 +86,5 @@ html {}
         float: left;
         margin-right: 3px;
     }
-
-}
-
-/* --------------------------------------------------------------------------------------------------------------------------------------------- */
-/* --------------------------------------------------------------------------------------------------------------------------------------------- */
-/* Para Ipads/Tablets */
-@media screen and (min-width: 481px) and (max-width: 768px) {
-
-    /* main */
-    main section article {
-        width: 60%;
-    }
-
-    p {
-        text-align: justify;
-    }
-
-    main section img {
-        width: 30%;
-        float: left;
-        margin-right: 3px;
-    }
-
 
 }

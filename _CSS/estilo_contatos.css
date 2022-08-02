@@ -7,7 +7,7 @@
 }
 
 /* PARA MOBILE */
-@media screen and (min-width: 320px) and (max-width: 480px) {
+@media screen and (min-width: 320px) and (max-width: 600px) {
     main h1 {
         text-align: center;
         border: 4px solid darkblue;
@@ -28,6 +28,9 @@
     font-size: 20px;
     font-weight: 700;
    }
+   main form {
+    padding: 0 2%;
+   }
    main form input {
     border-radius: 10px;
     border: 3px solid white;
@@ -38,6 +41,8 @@
    main form textarea {
     border-radius: 10px;
     border: 3px solid white;
+    margin-left: 19%;
+    resize: none;
    }
 
    main form p {
@@ -45,6 +50,8 @@
     font-size: 20px;
     font-weight: 700;
     margin-bottom:0;
+    text-align: center;
+    margin-top: 0;
    }
    main form button {
     margin-left: 80%;
@@ -81,7 +88,7 @@
 /* ---------------------------------------------------------------------------------------------------------------------------------------------*/
 
 /* PARA DESKTOP */
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 601px) {
     main h1 {
         text-align: center;
         border: 4px solid darkblue;
@@ -154,8 +161,8 @@
 /*--------------------------------------------------------------------------------------------------------------------------------------------- */
 /* ---------------------------------------------------------------------------------------------------------------------------------------------*/
 /* Para Ipads/Tablets */
-@media screen and (min-width: 481px) and (max-width: 768px) {
+/* @media screen and (min-width: 481px) and (max-width: 768px) {
 
     
 
-}
+} */
